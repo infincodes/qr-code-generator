@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>QR Code Generator</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div id="content">
+    <label for="linkInput">Enter Link:</label>
+    <input type="text" id="linkInput" placeholder="Enter your link">
+    <button onclick="generateQRCode()">Generate QR Code</button>
+
+    <div id="qr-code"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 QR Code Generator</p>
+  </footer>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
